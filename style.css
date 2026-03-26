@@ -1,5 +1,22 @@
-/*Set root font size to 16px*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap')
 
+:root {
+    --bg-primary: #303030;
+    --bg-secondary: rgb(176, 40, 40);
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1a1;
+    --accent-primary: #720000;
+    --accent-secondary: #000000;
+    --border-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+
+    /* Spacing - using consistent scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+    --space-xl: 4rem;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +26,13 @@
 main {
     max-width: 800px;
     margin: 0 auto;
-}
-/* Base body styles */
-body {
-    font-family:
-        "Times",
-        Times New Roman,
-        serif;
+    font-family: "Roboto Slab", serif;
     line-height: 1.6;
     color: #000000;
-    background-color: #fff;
 }
+
 h1 {
     line-height: 1;
 }
+
+/*define project variables*/
