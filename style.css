@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
  :root {
-    --bg-head: #009ad9;
-    --bg-primary: #0019ff;
-    --bg-secondary: rgb(183, 116, 255);
+    --bg-head: #82dbff;
+    --bg-primary: #79afff;
+    --bg-secondary: rgb(187, 187, 187);
     --text-primary: #000000;
-    --text-secondary: #828282;
-    --accent-primary: #720000;
+    --text-secondary: #686868;
+    --accent-primary: #dd5fff;
     --accent-secondary: #000000;
     --border-color: #ffffff;
     --shadow-color: rgba(0, 0, 0, 0.08);
@@ -23,9 +23,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    margin: 0;
+    padding: var(--space-sm);
+    box-sizing: border-box;
+}
+
 header {
     font-family: "Roboto Slab", serif;
-    background-color: var(--bg-head)
+    background-color: var(--bg-head);
+    padding: 0;
+    margin: var(--space-)
 }
 main {
     max-width: 800px;
