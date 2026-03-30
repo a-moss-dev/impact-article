@@ -1,51 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
- :root {
-    --bg-head: #82dbff;
+:root {
+    --bg-head: #72c6ff;
     --bg-primary: #79afff;
     --bg-secondary: rgb(187, 187, 187);
     --text-primary: #000000;
-    --text-secondary: #686868;
-    --accent-primary: #dd5fff;
-    --accent-secondary: #000000;
     --border-color: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.08);
 
     /* Spacing - using consistent scale */
+    --space-xxs: 0.2rem;
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
     --space-lg: 3rem;
     --space-xl: 4rem;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.container {
-    margin: 0;
-    padding: var(--space-sm);
-    box-sizing: border-box;
+
+
+body {
+    font-family: "Roboto Slab", serif;
+    color: var(--text-primary);
+    background-color: rgb(188, 238, 255);
+
 }
 
 header {
-    font-family: "Roboto Slab", serif;
     background-color: var(--bg-head);
-    padding: 0;
-    margin: var(--space-)
-}
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: "Roboto Slab", serif;
-    line-height: 1.6;
-    color: #000000;
+    padding: var(--space-xs);
+    margin: var(--space-sm);
+    margin-bottom: 1.5rem;
+    line-height: var(--space-md);
+    border: 0.2rem solid rgb(99, 99, 99);
+    border-radius: 10px;
 }
 
-h1 {
-    line-height: 1;
+.content {
+    margin: 1.75rem;
+    border: 0.2rem solid rgb(99, 99, 99);
+    line-height: 1.5rem;
+    padding: var(--space-xs);
+    background-color: rgb(171, 208, 255);
+    border-radius: 10px;
+}
+.content p {
+    margin-bottom: var(--space-md);
 }
 
-/*define project variables*/
+footer {
+    border: 0.2rem solid rgb(99, 99, 99);
+    border-radius: 10px;
+    padding: var(--space-xxs);
+    background-color:#d4d4d4
+}
