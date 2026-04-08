@@ -10,10 +10,12 @@
     /* Spacing - using consistent scale */
     --space-xxs: 0.2rem;
     --space-xs: 0.5rem;
+    --space-smalf: 0.75rem;
     --space-sm: 1rem;
     --space-md: 2rem;
     --space-lg: 3rem;
     --space-xl: 4rem;
+    --consist-marg: 1.75rem;
 }
 
 
@@ -28,7 +30,7 @@ body {
 header {
     background-color: var(--bg-head);
     padding: var(--space-xs);
-    margin: var(--space-sm);
+    margin: var(--consist-marg);
     margin-bottom: 1.5rem;
     line-height: var(--space-md);
     border: 0.2rem solid rgb(99, 99, 99);
@@ -39,7 +41,7 @@ header {
     margin: 1.75rem;
     border: 0.2rem solid rgb(99, 99, 99);
     line-height: 1.5rem;
-    padding: var(--space-xs);
+    padding: var(--space-smalf);
     background-color: rgb(171, 208, 255);
     border-radius: 10px;
 }
@@ -50,6 +52,7 @@ header {
 footer {
     border: 0.2rem solid rgb(99, 99, 99);
     border-radius: 10px;
-    padding: var(--space-xxs);
+    padding: var(--space-xs);
+    margin: var(--consist-marg);
     background-color:#d4d4d4
 }
