@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 :root {
-    --bg-head: #72c6ff;
+    /* Color variables */
     --bg-primary: #79afff;
-    --bg-secondary: rgb(187, 187, 187);
     --text-primary: #000000;
-    --border-color: #ffffff;
+    --borders: #636363;
 
-    /* Spacing - using consistent scale */
+    /* Spacing variables in consistent units */
     --space-xxs: 0.2rem;
     --space-xs: 0.5rem;
     --space-smalf: 0.75rem;
@@ -23,26 +22,26 @@
 body {
     font-family: "Roboto Slab", serif;
     color: var(--text-primary);
-    background-color: rgb(188, 238, 255);
+    background-color: #bceeff;
 
 }
 
 header {
-    background-color: var(--bg-head);
+    background-color: #72c6ff;
     padding: var(--space-xs);
     margin: var(--consist-marg);
     margin-bottom: 1.5rem;
     line-height: var(--space-md);
-    border: 0.2rem solid rgb(99, 99, 99);
+    border: 0.2rem solid var(--borders);
     border-radius: 10px;
 }
 
 .content {
     margin: 1.75rem;
-    border: 0.2rem solid rgb(99, 99, 99);
+    border: 0.2rem solid var(--borders);
     line-height: 1.5rem;
     padding: var(--space-smalf);
-    background-color: rgb(171, 208, 255);
+    background-color: #abd0ff;
     border-radius: 10px;
 }
 .content p {
@@ -50,9 +49,29 @@ header {
 }
 
 footer {
-    border: 0.2rem solid rgb(99, 99, 99);
+    border: 0.2rem solid var(--borders);
     border-radius: 10px;
     padding: var(--space-xs);
     margin: var(--consist-marg);
     background-color:#d4d4d4
+}
+
+.further-reading {
+    border: 0.2rem solid var(--borders);
+    padding: var(--space-sm);
+    margin: var(--consist-marg);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+    border: 0.2rem solid;
+    padding: var(--space-sm);
 }
