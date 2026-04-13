@@ -17,13 +17,10 @@
     --consist-marg: 1.75rem;
 }
 
-
-
 body {
     font-family: "Roboto Slab", serif;
     color: var(--text-primary);
     background-color: #bceeff;
-
 }
 
 header {
@@ -36,8 +33,13 @@ header {
     border-radius: 10px;
 }
 
+h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
 .content {
-    margin: 1.75rem;
+    margin: var(--consist-marg);
     border: 0.2rem solid var(--borders);
     line-height: 1.5rem;
     padding: var(--space-smalf);
@@ -45,7 +47,22 @@ header {
     border-radius: 10px;
 }
 .content p {
+    /*create spacing between paragraphs*/
     margin-bottom: var(--space-md);
+}
+
+@media (max-width: 530px) {
+    p {
+        /*Adjust font size depending on viewport dimensions*/
+        font-size: 1.25rem;
+        /*prevent squished lines of text when enlarged*/
+        line-height: var(--space-md);
+    }
+
+    h1 {
+        font-size: 2.175rem;
+        line-height: 2.2rem;
+    }
 }
 
 footer {
@@ -53,7 +70,7 @@ footer {
     border-radius: 10px;
     padding: var(--space-xs);
     margin: var(--consist-marg);
-    background-color:#d4d4d4
+    background-color: #d4d4d4;
 }
 
 .further-reading {
@@ -63,12 +80,17 @@ footer {
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cards h2 {
+    margin: 0 auto;
+    min-width: 10rem;
 }
 
 .card {
