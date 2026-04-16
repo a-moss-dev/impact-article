@@ -2,9 +2,8 @@
 
 :root {
     /* Color variables */
-    --bg-primary: #79afff;
-    --text-primary: #000000;
-    --borders: #000000;
+    --text-primary: #bf00ff;
+    --borders: #fb00d9;
 
     /* Spacing variables in consistent units */
     --space-xxs: 0.2rem;
@@ -20,11 +19,11 @@
 body {
     font-family: "Roboto Slab", serif;
     color: var(--text-primary);
-    background-color: #bceeff;
+    background-color: #4a489e;
 }
 
 header {
-    background-color: #72c6ff;
+    background-color: #001642;
     padding: var(--space-xs);
     margin: var(--consist-marg);
     margin-bottom: 1.5rem;
@@ -43,7 +42,7 @@ h1 {
     border: 0.2rem solid var(--borders);
     line-height: 1.5rem;
     padding: var(--space-smalf);
-    background-color: #abd0ff;
+    background-color: #000621;
     border-radius: 10px;
 }
 .content p {
@@ -98,7 +97,7 @@ a {
     font-weight: bold;
 }
 .card {
-    border: 0.2rem solid;
+    border: 0.2rem solid var(--borders);
     padding: var(--space-sm);
     border-radius: 10px;
     background-color: #86eaff;
