@@ -4,7 +4,7 @@
     /* Color variables */
     --bg-primary: #79afff;
     --text-primary: #000000;
-    --borders: #636363;
+    --borders: #000000;
 
     /* Spacing variables in consistent units */
     --space-xxs: 0.2rem;
@@ -93,9 +93,15 @@ footer {
     min-width: 10rem;
 }
 
+a {
+    color: #0019ff;
+    font-weight: bold;
+}
 .card {
     border: 0.2rem solid;
     padding: var(--space-sm);
+    border-radius: 10px;
+    background-color: #86eaff;
 }
 
 .card h3 {
