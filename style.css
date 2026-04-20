@@ -2,8 +2,8 @@
 
 :root {
     /* Color variables */
-    --text-primary: #bf00ff;
-    --borders: #fb00d9;
+    --text-primary: #000000;
+    --borders: #c8a4ff;
 
     /* Spacing variables in consistent units */
     --space-xxs: 0.2rem;
@@ -19,11 +19,14 @@
 body {
     font-family: "Roboto Slab", serif;
     color: var(--text-primary);
-    background-color: #4a489e;
+    background-color: #845da3;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.175rem
 }
 
 header {
-    background-color: #001642;
+    background-color: #c254a2;
     padding: var(--space-xs);
     margin: var(--consist-marg);
     margin-bottom: 1.5rem;
@@ -42,7 +45,7 @@ h1 {
     border: 0.2rem solid var(--borders);
     line-height: 1.5rem;
     padding: var(--space-smalf);
-    background-color: #000621;
+    background-color: #B91372;
     border-radius: 10px;
 }
 .content p {
@@ -50,7 +53,7 @@ h1 {
     margin-bottom: var(--space-md);
 }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
     p {
         /*Adjust font size depending on viewport dimensions*/
         font-size: 1.25rem;
@@ -69,7 +72,7 @@ footer {
     border-radius: 10px;
     padding: var(--space-xs);
     margin: var(--consist-marg);
-    background-color: #d4d4d4;
+    background-color: #34336e;
 }
 
 .playlist-links {
@@ -85,6 +88,7 @@ footer {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    color: #ff00a2;
 }
 
 .playlist-links h2 {
@@ -93,16 +97,23 @@ footer {
 }
 
 a {
-    color: #0019ff;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .card {
     border: 0.2rem solid var(--borders);
     padding: var(--space-sm);
     border-radius: 10px;
-    background-color: #86eaff;
+    background-color: #5a0068;
 }
 
 .card h3 {
     text-decoration: none;
+}
+
+img {
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    width: 35rem;
 }
