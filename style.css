@@ -3,7 +3,7 @@
 :root {
     /* Color variables */
     --text-primary: #000000;
-    --borders: #c8a4ff;
+    --borders: #d7bdff;
 
     /* Spacing variables in consistent units */
     --space-xxs: 0.2rem;
@@ -42,10 +42,10 @@ h1 {
 
 .content {
     margin: var(--consist-marg);
-    border: 0.2rem solid var(--borders);
+    border: 0.3rem solid var(--borders);
     line-height: 1.5rem;
     padding: var(--space-smalf);
-    background-color: #B91372;
+    background-color: #cf93ce;
     border-radius: 10px;
 }
 .content p {
@@ -68,17 +68,12 @@ h1 {
 }
 
 footer {
-    border: 0.2rem solid var(--borders);
+    border: 0.3rem solid var(--borders);
     border-radius: 10px;
     padding: var(--space-xs);
     margin: var(--consist-marg);
     background-color: #34336e;
-}
-
-.playlist-links {
-    border: 0.2rem solid var(--borders);
-    padding: var(--space-sm);
-    margin: var(--consist-marg);
+    color: #ffa2e8
 }
 
 .cards {
@@ -101,7 +96,7 @@ a {
     font-weight: bold;
 }
 .card {
-    border: 0.2rem solid var(--borders);
+    border: 0.3rem solid var(--borders);
     padding: var(--space-sm);
     border-radius: 10px;
     background-color: #5a0068;
