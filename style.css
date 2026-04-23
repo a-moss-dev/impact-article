@@ -22,7 +22,7 @@ body {
     background-color: #845da3;
     max-width: 700px;
     margin: 0 auto;
-    font-size: 1.175rem
+    font-size: 1.175rem;
 }
 
 header {
@@ -73,7 +73,7 @@ footer {
     padding: var(--space-xs);
     margin: var(--consist-marg);
     background-color: #34336e;
-    color: #ffa2e8
+    color: #ffa2e8;
 }
 
 .cards {
@@ -106,9 +106,12 @@ a {
     text-decoration: none;
 }
 
+.img-box {
+    max-width: 80%;
+    padding: 2rem;
+}
+
 img {
-    display: flex;
-    align-content: center;
     margin: 0 auto;
-    width: 35rem;
+    width: 100%;
 }
