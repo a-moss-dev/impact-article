@@ -100,6 +100,7 @@ a {
     padding: var(--space-sm);
     border-radius: 10px;
     background-color: #5a0068;
+    animation: shadow-slide-out 0.25s ease-in-out both;
 }
 
 .card h3 {
@@ -119,12 +120,12 @@ img {
 /*Animations*/
 
 .card:hover {
-    animation:
-        shadow-slide 0.25s ease-in-out both,
-        slide-fwd-center 0.25s ease-in-out both;
+    animation: shadow-slide-in 0.25s ease-in-out both;
 }
 
-@keyframes shadow-slide {
+
+
+@keyframes shadow-slide-in {
     0% {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         transform: scale(1);
@@ -132,5 +133,16 @@ img {
     100% {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
         transform: scale(1.05);
+    }
+}
+
+@keyframes shadow-slide-out{
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.35);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+        transform: scale(1);
     }
 }
