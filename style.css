@@ -28,7 +28,7 @@ body {
 header {
     background-color: #c254a2;
     padding: var(--space-xs);
-    margin: var(--consist-marg);
+    /*margin: var(--consist-marg);*/
     margin-bottom: 1.5rem;
     line-height: var(--space-md);
     border: 0.2rem solid var(--borders);
@@ -41,7 +41,7 @@ h1 {
 }
 
 .content {
-    margin: var(--consist-marg);
+    /*margin: var(--consist-marg);*/
     border: 0.3rem solid var(--borders);
     line-height: 1.5rem;
     padding: var(--space-smalf);
@@ -71,7 +71,7 @@ footer {
     border: 0.3rem solid var(--borders);
     border-radius: 10px;
     padding: var(--space-xs);
-    margin: var(--consist-marg);
+    margin-top: var(--space-lg);
     background-color: #34336e;
     color: #ffa2e8;
 }
@@ -84,10 +84,11 @@ footer {
     gap: 1rem;
     flex-wrap: wrap;
     color: #ff00a2;
+    width: 100%;
 }
 
 .playlist-links h2 {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     min-width: 10rem;
 }
 
@@ -100,6 +101,7 @@ a {
     padding: var(--space-sm);
     border-radius: 10px;
     background-color: #5a0068;
+    /*"not hovering" animation*/
     animation: shadow-slide-out 0.25s ease-in-out both;
 }
 
@@ -123,7 +125,7 @@ img {
     animation: shadow-slide-in 0.25s ease-in-out both;
 }
 
-
+/*Set different keyframes for when the mouse is hovering over .card vs when it's not*/
 
 @keyframes shadow-slide-in {
     0% {
@@ -132,14 +134,14 @@ img {
     }
     100% {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
-        transform: scale(1.05);
+        transform: scale(1.025);
     }
 }
 
 @keyframes shadow-slide-out{
     0% {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.35);
-        transform: scale(1.05);
+        transform: scale(1.025);
     }
     100% {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
