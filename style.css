@@ -119,15 +119,18 @@ img {
 /*Animations*/
 
 .card:hover {
-    animation: shadow-slide 0.25s ease-in-out both;
+    animation:
+        shadow-slide 0.25s ease-in-out both,
+        slide-fwd-center 0.25s ease-in-out both;
 }
 
 @keyframes shadow-slide {
     0% {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: scale(1);
     }
     100% {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
-        transform: translateZ(200px);
+        transform: scale(1.05);
     }
 }
